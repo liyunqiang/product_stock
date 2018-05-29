@@ -1,0 +1,13 @@
+# development: &development
+#   adapter: mysql2
+#   encoding: utf8
+#   # host: 192.168.1.200
+#   host: localhost
+#   reconnect: false
+#   database: dada
+#   pool: 5
+#   username:
+#   password:
+
+# production:
+#   <<: *development

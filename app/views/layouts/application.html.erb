@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ProductStock</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="layui-layout-body">
+    <div class="layadmin-tabspage-none">
+      <div class="layui-layout layui-layout-admin">
+        <div class="layui-header">
+          <ul class="layui-nav layui-layout-left">
+            <li class="layui-nav-item layadmin-flexible" lay-unselect="">
+              <a href="javascript:;" layadmin-event="flexible" title="侧边伸缩">
+                <i class="layui-icon layui-icon-shrink-right" id="LAY_app_flexible"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="layui-nav-item layadmin-flexible" lay-filter="layadmin-layout-right">
+            
+          </ul>
+        </div>
+        <%= render partial: 'admin/shared/left_menu' %>
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>
